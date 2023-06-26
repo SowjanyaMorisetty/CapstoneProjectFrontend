@@ -1,0 +1,45 @@
+<div>
+    <div class="row">
+        <div class="form-container">
+            <div class="form-header">
+                <h3>Add Bus</h3>
+
+                <form>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="id" placeholder="Enter Schedule Id" [(ngModel)]="scheduleId" name="scheduleId">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="date" placeholder="Enter date" [(ngModel)]="date" name="date">
+                    </div>
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" id="deptime" placeholder="Enter depature time"
+                            [(ngModel)]="departureTime"  name="departureTime"/>
+                    </div>
+
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" id="arrivalTime" placeholder="Enter arrival Time"
+                            [(ngModel)]="arrivalTime"  name="arrivalTime"/>
+                    </div>
+
+
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="routeId" placeholder="Enter route Id"
+                        [(ngModel)]="routeId" name="routeId">
+                    </div>
+
+                   
+                    
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="busId" placeholder="Enter bus Id" [(ngModel)]="busId" name="busId">
+                    </div>
+                    <div class="button-container">
+                        <button class="btn btn-primary btn-sm" type="submit" (click)="addschedule()">Add Schedule</button >
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,29 @@
+<div class="body">
+
+    <div class="row">
+  
+      <div class="col-sm-4" *ngFor="let b of bus; let i = index;">
+  
+        <div class="row">
+  
+          <div class="col-sm-12">
+  
+            <div class="card d-flex flex-column my-3"> <!-- Added 'y-3' class for margin -->
+  
+              <p>Bus Id:{{bus[i].busId}}</p><br>
+              <p>Bus Name:{{bus[i].busName}}</p><br>
+              <p>Bus Number:{{bus[i].busNo}}</p><br>
+              <p>Registration Number:{{bus[i].regNo}}</p><br>
+              <p>Engine Number:{{bus[i].engineNo}}</p><br>
+              <p>Total Seats:{{bus[i].totalSeats}}</p>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>

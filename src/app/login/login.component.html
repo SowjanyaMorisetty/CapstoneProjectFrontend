@@ -1,0 +1,158 @@
+<!-- <head>
+  <title>Login Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+  /* background-image: url('../assets/image/image.png'); */
+
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  padding-top: 10px;
+  border-radius: 4px;
+  
+  padding-top: 100px;
+  height: 100vh;
+  background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding-top: 100px;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      
+      
+}
+
+    .custom-border {
+      max-width: 400px;
+      margin: 0 auto;
+      margin-top: 50px;
+      padding: 20px;
+      border: 1px solid #555;
+      border-radius: 4px;
+      background-color: #333;
+      opacity: 90%;
+    }
+
+    .login {
+      margin-bottom: 20px;
+    }
+
+    .form-control {
+      background-color: rgb(255, 255, 255);
+      color: rgb(112, 37, 37);
+    }
+
+    .btn-primary {
+      background-color: #3b129b;
+      border-color: #1c26a5;
+    }
+
+    .btn-primary:hover {
+      background-color: #1f1442;
+      border-color: #241945;
+    }
+
+    .create-account span {
+      cursor: pointer;
+      color: rgb(0, 0, 0);
+    }
+    .create-account:hover{
+      cursor: pointer;
+      color: rgb(5, 5, 59);
+    }
+  </style>
+</head>
+<body>
+  <div class="custom-border">
+    <div class="d-flex flex-column">
+      <h2 class="login justify-content-center text-center">Login</h2>
+      <div class="mb-3">
+        <div class="input-group">
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+              </svg>
+            </span>
+            <input type="text" class="form-control" placeholder="Username" [(ngModel)]="name" required>
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="input-group">
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-lock2" viewBox="0 0 16 16">
+                <path d="M8 5a1 1 0 0 1 1 1v1H7V6a1 1 0 0 1 1-1zm2 2.076V6a2 2 0 1 0-4 0v1.076c-.54.166-1 .597-1 1.224v2.4c0 .816.781 1.3 1.5 1.3h3c.719 0 1.5-.484 1.5-1.3V8.3c0-.627-.46-1.058-1-1.224z"/>
+                <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+              </svg>
+            </span>
+            <input type="password" class="form-control" placeholder="Password" required [(ngModel)]="password">
+          </div>
+        </div>
+      </div>
+      <div class="sum text-center">
+        <input type="submit" value="Login" (click)="login()" class="btn btn-primary">
+      </div>
+      <div class="links text-center">
+        <p routerLink="/signup" class="create-account"><span>Create Account |</span> SignUp</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body> -->
+
+
+
+<!-- <body>
+ <div class="container">
+  <div class="wrapper">
+      <form class="login">
+        <p class="title">Log in</p>
+        <input type="text" placeholder="Username" autofocus [(ngModel)]="name" required>
+        <i class="fa fa-user"></i>
+        <input type="password" placeholder="Password" required [(ngModel)]="password" >
+        <i class="fa fa-key"></i>
+        <a href="#">Forgot your password?</a>
+        <button>
+          <i class="spinner"></i>
+          <span class="state"type="submit" value="Login" (click)="login()">Log in</span>
+        </button>
+        
+      </form>
+      <p routerLink="/signup"  type="button" class="create-account"><span type="button">Don't Have An Account ? |</span> SignUp</p>
+      
+    </div>
+    </div> 
+  </body> -->
+
+
+
+  <body>
+    <div class="container" id="login">
+      <div class="wrapper">
+        <form class="login" (ngSubmit)="login()" #loginForm="ngForm">
+          <p class="title">Log in</p>
+          <input type="text" placeholder="Username" autofocus [(ngModel)]="userName" name="username" required pattern="[a-zA-Z0-9]+">
+          <i class="fa fa-user"></i>
+          <div class="error" *ngIf="loginForm.controls['username'].invalid && (loginForm.controls['username'].dirty || loginForm.controls['username'].touched)">
+            <span *ngIf="loginForm.controls['username'].errors?.['required']">Username is required.</span>
+            <span *ngIf="loginForm.controls['username'].errors?.['pattern']">Username should contain only letters and numbers.</span>
+          </div>
+          <input type="password" placeholder="Password" [(ngModel)]="userPassword" name="password" required>
+          <i class="fa fa-key"></i>
+          <div class="error" *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)">
+            <span *ngIf="loginForm.controls['password'].errors?.['required']">Password is required.</span>
+          </div>
+          <!-- <a href="#">Forgot your password?</a> -->
+          <button [disabled]="loginForm.invalid">
+            <i class="spinner"></i>
+            <span class="state" type="submit">Log in</span>
+          </button>
+        </form>
+        <p routerLink="/signup" type="button" class="create-account"><span type="button">Don't Have An Account? |</span> SignUp</p>
+      </div>
+    </div>
+  </body>
+  

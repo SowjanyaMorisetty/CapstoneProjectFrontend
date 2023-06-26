@@ -1,0 +1,54 @@
+<div>
+    <div class="row">
+        <div class="form-container">
+            <div class="form-header">
+                <h3>Add Bus</h3>
+
+                <form>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="id" placeholder="Enter Bus Id" [(ngModel)]="busId" name="busId">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Enter Bus Name" [(ngModel)]="busName" name="busName">
+                    </div>
+                    <div class="form-group">
+
+                        <input type="number" class="form-control" id="no" placeholder="Enter Bus Number"
+                            [(ngModel)]="busNo"  name="busNo"/>
+                    </div>
+
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" id="reg" placeholder="Enter Register Number"
+                            [(ngModel)]="regNo"  name="regNo"/>
+                    </div>
+
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="engine no" placeholder="Enter Engine Number"
+                        [(ngModel)]="engineNo" name="engineNo">
+                    </div>
+
+                    <div class="form-group">
+
+                        <select class="form-control" id="bus type" [(ngModel)]="busType" placeholder="Select bus type" name="busType">
+
+                            <option value="bus type">Bus Type</option>
+                            <option value="male">AC</option>
+                            <option value="female">Non-AC</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="seats" placeholder="Enter Total Seats" [(ngModel)]="totalSeats" name="totalSeats">
+                    </div>
+                    <div class="button-container">
+                        <button class="btn btn-primary btn-sm" type="submit" (click)="addbus()">Add</button >
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,49 @@
+
+
+.navbar {
+
+    background-color: black;
+    height: 15vh;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+      
+
+}
+
+
+
+
+.navbar .navbar-brand {
+
+    color: white;
+
+}
+
+
+
+
+.navbar .navbar-nav .nav-link {
+
+    color: white;
+
+    font-family: Roboto, Arial, sans-serif;
+
+    font-weight: bold;
+
+}
+
+
+
+
+.logo {
+
+  padding-right: 50px;
+
+    width: 35%;
+
+    padding-left: 1px;
+
+}
+
+

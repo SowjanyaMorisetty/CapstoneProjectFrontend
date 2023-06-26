@@ -1,0 +1,49 @@
+.footer {
+
+    background-color:rgb(7, 7, 7) ;
+  
+    /* background-color: black; */
+  
+    /* color: rgb(163, 154, 154); */
+  
+    color: rgb(255, 255, 255);
+  
+    padding: 20px;
+  
+    text-align: center;
+  
+    display: flex;
+  
+    flex-direction: column;
+    
+  
+   
+  
+  }
+  
+  @media (max-width: 767px) {
+  
+    .cards,
+  
+    .about-us-container,
+  
+    .popular {
+  
+      max-width: none;
+  
+    }}
+  
+  
+  
+  
+    .contact-us-container {
+  
+      margin-top: 40px;
+  
+      margin-bottom: 40px;
+  
+      padding-left: 14px;
+  
+      line-height: 4px;
+  
+    }

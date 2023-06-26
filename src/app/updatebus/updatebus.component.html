@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="search-bar" style="position: relative">
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" class="form-control" id="name" placeholder="Enter Bus Registration number" [(ngModel)]="regNo" name="regNo">
+                </div>
+                <div class="col">
+                  <button class="btn btn-primary" style="background-color:#A80A1D" (click)="getdetails(regNo)">Search</button>
+                </div>
+              </div>
+            </div>
+            
+            <form *ngIf="selectedBus">
+              <div class="form-group">
+                <input type="number" class="form-control small-input" id="id" [(ngModel)]="selectedBus.busId" name="busId">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control small-input" id="name" placeholder="Enter Bus Name" [(ngModel)]="selectedBus.busName" name="busName">
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control small-input" id="no" placeholder="Enter Bus Number" [(ngModel)]="selectedBus.busNo" name="busNo">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control small-input" id="reg" placeholder="Enter Register Number" [(ngModel)]="selectedBus.regNo" name="regNo">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control small-input" id="engine no" placeholder="Enter Engine Number" [(ngModel)]="selectedBus.engineNo" name="engineNo">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control small-input" id="bus type" placeholder="Enter Bus type" [(ngModel)]="selectedBus.busType" name="busType">
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control small-input" id="seats" placeholder="Enter Total Seats" [(ngModel)]="selectedBus.totalSeats" name="totalSeats">
+              </div>
+              <div class="button-container">
+                <button class="btn btn-primary btn-sm" type="submit" (click)="updateBus()">Update</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

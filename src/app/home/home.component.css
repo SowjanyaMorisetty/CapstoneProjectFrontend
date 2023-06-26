@@ -1,0 +1,130 @@
+.carousel-item img {
+    width: 100%;
+  object-fit: cover;
+  height: 40rem;
+  }
+  p{
+    font-family: Helvetica;
+  }
+  .card{
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    /* border: 1px solid black; */
+  }
+
+  nav{
+    background-color: black;
+    color: white;
+    padding: 13px;
+  }
+  .cards {
+    top: -28rem;
+    position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgba(17, 16, 16, 0.41);
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-content: center; */
+  width: 31rem;
+  margin: auto;
+  
+  }
+
+  .about-us-container {
+    position: absolute;
+    top: 40rem;
+    padding-left: 14px;
+    margin-block: 1rem;
+   
+  }
+  
+h3{
+
+margin-block: 2rem;
+}
+  .contact-us-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 14px;
+    line-height: 4px;
+  }
+
+  .footer {
+    background-color:rgb(163, 154, 154) ;
+    /* background-color: black; */
+    /* color: rgb(163, 154, 154); */
+    color: black;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .busimg{
+    height: 70vh;
+    width: auto;
+    box-shadow: white;
+  }
+  .offerimg{
+    height: 50vh;
+  }
+
+  .carousel-inner{
+    height: 37rem;
+    width: auto;
+   
+  }
+ .offers{
+  display: flex;
+  flex-direction: row;
+  margin-top: 12rem;
+
+
+ }
+ @media (max-width: 767px) {
+    .cards,
+    .about-us-container,
+    .popular {
+      max-width: none;
+    }}
+
+ .offersmain{
+  position: relative;
+  top: -34rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+ }
+ p{
+  padding-inline: 3rem;
+ }
+
+ .popular{
+  margin-block: 6rem;
+ }
+ .btn{
+  margin-left: 192px;
+ }
+ .main{
+   background-color: white;
+   color: black;
+   height: 100vh;
+ }
+ .card-text{
+  background-color: black;
+   color: rgb(168, 165, 165);
+ }
+ .alink{
+   color: black;
+ }
+ .srtcimg{
+   width: 80%;
+ }

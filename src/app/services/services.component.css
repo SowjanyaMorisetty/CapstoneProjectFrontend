@@ -1,0 +1,157 @@
+.carousel-item img {
+
+    width: 100%;
+
+  object-fit: cover;
+
+  height: 40rem;
+
+  }
+
+  p{
+
+    font-family: Helvetica;
+
+  }
+
+  .card{
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+
+    /* border: 1px solid black; */
+
+  }
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  h3{
+
+ 
+
+  margin-block: 2rem;
+
+  }
+
+ 
+
+ 
+
+ 
+
+  .busimg{
+
+    height: 70vh;
+
+    width: auto;
+
+    box-shadow: white;
+
+  }
+
+  .offerimg{
+
+    height: 50vh;
+
+  }
+
+ 
+
+  .offers{
+
+  display: flex;
+
+  flex-direction: row;
+
+  margin-top: 12rem;
+
+ 
+
+ 
+
+  }
+
+  @media (max-width: 767px) {
+
+    .cards,
+
+    .about-us-container,
+
+    .popular {
+
+      max-width: none;
+
+    }}
+
+ 
+
+  .offersmain{
+
+  position: relative;
+
+  top: -34rem;
+
+  margin: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  }
+
+  p{
+
+  padding-inline: 3rem;
+
+  }
+
+ 
+
+  .popular{
+
+  margin-block: 6rem;
+
+  }
+
+  .btn{
+
+  margin-left: 192px;
+
+  }
+
+  body,.main{
+
+   background-color: black;
+
+   color: white;
+
+  }
+
+  .card-text{
+
+  background-color: black;
+
+   color: rgb(168, 165, 165);
+
+  }
+
+  .alink{
+
+   color: black;
+
+  }
+
+  .srtcimg{
+
+   width: 80%;
+
+  }

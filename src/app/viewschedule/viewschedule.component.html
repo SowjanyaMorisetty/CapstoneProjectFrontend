@@ -1,0 +1,29 @@
+<div class="body">
+
+    <div class="row">
+  
+      <div class="col-sm-4" *ngFor="let b of schedule; let i = index;">
+  
+        <div class="row">
+  
+          <div class="col-sm-12">
+  
+            <div class="card d-flex flex-column my-3"> <!-- Added 'y-3' class for margin -->
+  
+              <p>Schedule Id:{{schedule[i].scheduleId}}</p><br>
+              <p>Date:{{schedule[i].date}}</p><br>
+              <p>Departure Time:{{schedule[i].departureTime}}</p><br>
+              <p>Arrival Time:{{schedule[i].arrivalTime}}</p><br>
+              <p>Route Id:{{schedule[i].routeId}}</p><br>
+              <p>Bus Id:{{schedule[i].busId}}</p>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>
